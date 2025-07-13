@@ -21,6 +21,12 @@ GitHub - Plataforma de hospedagem de códigos e afins, constrúido em base no GI
 
 GIT - Ferramenta para manipular as versões dos códigos, afim de salvar as alterações, verificar quem ou que fez tal alteração, voltar versões antigas. Tal ferramenta ajuda a desenvolvimento colaborativo e não dependente de apenas uma pessoa desenvolver uma coisa do início ao fim. É um Sistema de Controle de Versão Distribuído (VCS), tal qual todo DEV tem uma cópia completa do histórico do projeto em sua máquina local, não apenas online. Isso torna o trabalho offline possível e de forma mais eficiente.
 
+
+#### [Documentação oficial do GIT](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-O-B%C3%A1sico-do-Git)
+#### [Git flow - Alura](https://www.alura.com.br/artigos/git-flow-o-que-e-como-quando-utilizar)
+
+![alt text](image-3.png)
+
 git init: Converte diretório local em um repositório GIT (Utilizar apenas 1 vez)
 
 git push: Usado para sincronizar as mudanças do repositório local para o repositório online
@@ -41,9 +47,23 @@ git status: Verifica o status geral, incluindo as mudanças feitas e ainda não 
 
 git add .: Pré adiciona as atualizações para serem atualizadas de fato no diretório online, ao dar o git status, após add ele ficar verde
 
-git commit: Serve para de fato salvar as alterações que você fez, normalmente vc utiliza o git add . e após isso usa o git commit
+git commit: Serve para de fato salvar as alterações que você fez, normalmente vc utiliza o git add . e após isso usa o git commit.  m,n 
 
 ![alt text](image-1.png)
+
+
+Sinalizações no explorer - 
+![alt text](image-4.png)
+
+M - A letra M representa o estado Modified, do português modificado. Isso significa que o arquivo já existia no repositório, mas que recebeu alguma modificação que ainda não foi registrada no Git.
+
+U -  A letra U representa o estado Untracked, do português não rastreado. Isso significa que o arquivo ainda não existia no repositório e que ainda não teve seu registro (commit) feito no Git.
+
+Boas práticas para mensagem do commit - 
+1) Mensagem curta e direta
+2) Uso do verbo no infinitivo, ex: "Atualizar texto do título da página"
+3) Evitar detalhes tecnicos
+
 
 
 Branches - São como se fosse linhas do tempo do código, permite que você instancie uma versão do código master\main, daí você consegue desenvolver e alterá-lo para corrigir ou incrementá-lo, porém sem o risco de alterar o código principal. Em tese você desenvolve, passa por vários testes e somente após a versão de desenvolvedor esteja estável e testada, ele atualiza o código master\main
