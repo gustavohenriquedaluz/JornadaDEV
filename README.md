@@ -35,6 +35,16 @@ git remote set-url origin https://github....: Alterar a Url de um repositório r
 
 git remote rename origin novo-origin: Renomear o apelido de um repositório remoto
 
+git clone: Funciona para clonar repositório, apenas utilizando o terminal do windows, o código + o link disponibilizado no respositório ao clicar em code
+
+git status: Verifica o status geral, incluindo as mudanças feitas e ainda não sincronizadas
+
+git add .: Pré adiciona as atualizações para serem atualizadas de fato no diretório online, ao dar o git status, após add ele ficar verde
+
+git commit: Serve para de fato salvar as alterações que você fez, normalmente vc utiliza o git add . e após isso usa o git commit
+
+![alt text](image-1.png)
+
 
 Branches - São como se fosse linhas do tempo do código, permite que você instancie uma versão do código master\main, daí você consegue desenvolver e alterá-lo para corrigir ou incrementá-lo, porém sem o risco de alterar o código principal. Em tese você desenvolve, passa por vários testes e somente após a versão de desenvolvedor esteja estável e testada, ele atualiza o código master\main
 
