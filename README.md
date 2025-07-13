@@ -29,6 +29,13 @@ git remote add: Usado para dizer ao git o local onde as cópias dos repositório
 
 git remote -v: Listar todos os locais remotos que já foram configurados
 
+git remote remove origin: Remover um repositório remoto
+
+git remote set-url origin https://github....: Alterar a Url de um repositório remoto
+
+git remote rename origin novo-origin: Renomear o apelido de um repositório remoto
+
+
 Branches - São como se fosse linhas do tempo do código, permite que você instancie uma versão do código master\main, daí você consegue desenvolver e alterá-lo para corrigir ou incrementá-lo, porém sem o risco de alterar o código principal. Em tese você desenvolve, passa por vários testes e somente após a versão de desenvolvedor esteja estável e testada, ele atualiza o código master\main
 
 Master\Main - Código principal, ele só é atualizado após as instâncias de desenvolvimento sejam completamente estáveis. Isso é importante pois em um mundo onde várias pessoas estão desenvolvendo várias atualizações em paralelo, é comum dar conflito e isso precisa ser resolvido antes de atualizá-lo
