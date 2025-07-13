@@ -21,6 +21,14 @@ GitHub - Plataforma de hospedagem de códigos e afins, constrúido em base no GI
 
 GIT - Ferramenta para manipular as versões dos códigos, afim de salvar as alterações, verificar quem ou que fez tal alteração, voltar versões antigas. Tal ferramenta ajuda a desenvolvimento colaborativo e não dependente de apenas uma pessoa desenvolver uma coisa do início ao fim. É um Sistema de Controle de Versão Distribuído (VCS), tal qual todo DEV tem uma cópia completa do histórico do projeto em sua máquina local, não apenas online. Isso torna o trabalho offline possível e de forma mais eficiente.
 
+git init: Converte diretório local em um repositório GIT (Utilizar apenas 1 vez)
+
+git push: Usado para sincronizar as mudanças do repositório local para o repositório online
+
+git remote add: Usado para dizer ao git o local onde as cópias dos repositórios onlines estão localizadas. Estabelecendo a conexão contre o local e o remoto.
+
+git remote -v: Listar todos os locais remotos que já foram configurados
+
 Branches - São como se fosse linhas do tempo do código, permite que você instancie uma versão do código master\main, daí você consegue desenvolver e alterá-lo para corrigir ou incrementá-lo, porém sem o risco de alterar o código principal. Em tese você desenvolve, passa por vários testes e somente após a versão de desenvolvedor esteja estável e testada, ele atualiza o código master\main
 
 Master\Main - Código principal, ele só é atualizado após as instâncias de desenvolvimento sejam completamente estáveis. Isso é importante pois em um mundo onde várias pessoas estão desenvolvendo várias atualizações em paralelo, é comum dar conflito e isso precisa ser resolvido antes de atualizá-lo
@@ -36,3 +44,4 @@ Issues (Problemas/Tarefas) - Como se fosse algumas anotações ou TAGs para indi
 Wikis e DOCs - Um repositório que geralmente contém wikis e ferramentas para criar e manter as documentações dos projetos. Isso ajuda aos novos mebros entenderem o código que já foi desenvolvido para começar a atuar
 
 Integração Contínua/Entrega Contínua (CI/CD) com GitHub Actions - Permite automatizar os fluxos de trabalho diretamente no repositório, é possível configurá-lo para que, automaticamente quando um código seja enviado, ele seja testado (Integração Contínua) e construído e implementado em um servidor (Entrega Contínua)
+
