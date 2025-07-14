@@ -45,11 +45,27 @@ git clone: Funciona para clonar repositório, apenas utilizando o terminal do wi
 
 git status: Verifica o status geral, incluindo as mudanças feitas e ainda não sincronizadas
 
-git add .: Pré adiciona as atualizações para serem atualizadas de fato no diretório online, ao dar o git status, após add ele ficar verde
+git log: Lista os commits já realizados
 
-git commit: Serve para de fato salvar as alterações que você fez, normalmente vc utiliza o git add . e após isso usa o git commit.  m,n 
+git add .: Prepara e adiciona as atualizações para serem atualizadas de fato no diretório online, ao dar o git status, após add ele ficar verde
 
-![alt text](image-1.png)
+git commit: Serve para de fato salvar as alterações localmente que você fez
+
+OBS: Commit com vários autores -> [Doc GitHub](https://docs.github.com/pt/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors)
+
+git push origin main: Após salvar localmente, você compartilha com o repositório online. OBS: para compartilhar com um projeto que você não é o criador, precisa de uma permissão prévia no repositório do GitHub
+
+git pull origin main: Oposto do git push, ele verifica e extrai o repositório online, normalmente útil para puxar o novo repositório atuaizado por outros colaboradores.
+
+
+#### O Fluxo Comum no Dia a Dia:
+Modifique arquivos no seu projeto. ✍️
+1) Use **git status** para ver o que foi alterado. 🤔
+2) Use **git add .** (ou git add <arquivos>) para preparar as alterações que você quer salvar. 📦
+3) Use **git status** novamente para confirmar que as alterações estão na área de staging. ✅
+4) Use **git commit -m "Sua mensagem"** para salvar essas alterações no histórico local. 📝
+5) Use **git push** para enviar suas alterações salvas para o repositório remoto (GitHub). 🚀
+
 
 
 Sinalizações no explorer - 
