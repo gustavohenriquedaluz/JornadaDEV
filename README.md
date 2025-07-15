@@ -57,8 +57,11 @@ OBS: Commit com vários autores -> [Doc GitHub](https://docs.github.com/pt/pull-
 
 git push origin main: Após salvar localmente, você compartilha com o repositório online. OBS: para compartilhar com um projeto que você não é o criador, precisa de uma permissão prévia no repositório do GitHub
 
+![alt text](image-7.png)
+
 git pull origin main: Oposto do git push, ele verifica e extrai o repositório online, normalmente útil para puxar o novo repositório atuaizado por outros colaboradores.
 
+![alt text](image-8.png)
 
 #### O Fluxo Comum no Dia a Dia:
 Modifique arquivos no seu projeto. ✍️
@@ -70,7 +73,10 @@ Modifique arquivos no seu projeto. ✍️
 
 
 
-Sinalizações no explorer - 
+
+
+Sinalizações no explorer
+
 ![alt text](image-4.png)
 
 M - A letra M representa o estado Modified, do português modificado. Isso significa que o arquivo já existia no repositório, mas que recebeu alguma modificação que ainda não foi registrada no Git.
@@ -100,3 +106,28 @@ Wikis e DOCs - Um repositório que geralmente contém wikis e ferramentas para c
 
 Integração Contínua/Entrega Contínua (CI/CD) com GitHub Actions - Permite automatizar os fluxos de trabalho diretamente no repositório, é possível configurá-lo para que, automaticamente quando um código seja enviado, ele seja testado (Integração Contínua) e construído e implementado em um servidor (Entrega Contínua)
 
+
+
+#### Resolvendo Conflitos de Merge com o VS Code
+
+Conflitos de merge acontecem quando duas alterações diferentes modificam a mesma parte de um arquivo e o Git não sabe qual manter. O Visual Studio Code Merge Editor é a ferramenta ideal para resolver isso.
+
+Como funciona:
+
+**Detecção do Conflito**: Ao tentar um git pull, merge ou rebase, se houver um conflito, o Git pausa e o VS Code marca o arquivo.
+
+**Abertura do Editor**: Clique no arquivo conflitante (ícone de alerta) e selecione "Resolver em Merge Editor" ou "Open Merge Editor".
+
+Interface: O editor exibe três painéis:
+
+Esquerdo (Current): Suas alterações.
+
+Direito (Incoming): As alterações que estão sendo incorporadas.
+
+Central (Result): Onde você constrói a versão final, combinando ou escolhendo as partes.
+
+**Resolução**: Use os botões "Accept Current Change", "Accept Incoming Change" ou "Accept Both Changes" para decidir. Você também pode editar manualmente o painel "Result" para combinar o conteúdo.
+
+**Finalização**: Após resolver todos os conflitos visuais no painel "Result" e salvar o arquivo, adicione-o ao stage (git add <nome_do_arquivo>) e, em seguida, faça o commit (git commit) para completar a resolução do merge.
+
+![alt text](image-9.png)
