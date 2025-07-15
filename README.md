@@ -48,8 +48,10 @@ git status: Verifica o status geral, incluindo as mudanças feitas e ainda não 
 git log: Lista os commits já realizados
 
 git add .: Prepara e adiciona as atualizações para serem atualizadas de fato no diretório online, ao dar o git status, após add ele ficar verde
+![alt text](image-5.png)
 
-git commit: Serve para de fato salvar as alterações localmente que você fez
+git commit: Serve para de fato salvar as alterações localmente que você fez.
+![alt text](image-6.png)
 
 OBS: Commit com vários autores -> [Doc GitHub](https://docs.github.com/pt/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors)
 
