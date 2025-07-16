@@ -47,6 +47,8 @@ git status: Verifica o status geral, incluindo as mudanças feitas e ainda não 
 
 git log: Lista os commits já realizados
 
+git diff: Antes de add, ele mostra as alterações desde o último commit
+
 git add .: Prepara e adiciona as atualizações para serem atualizadas de fato no diretório online, ao dar o git status, após add ele ficar verde
 ![alt text](image-5.png)
 
@@ -55,6 +57,8 @@ git commit: Serve para de fato salvar as alterações localmente que você fez.
 
 OBS: Commit com vários autores -> [Doc GitHub](https://docs.github.com/pt/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors)
 
+git commit --amend -m "mensagem": Serve para modificar um commit recente
+
 git push origin main: Após salvar localmente, você compartilha com o repositório online. OBS: para compartilhar com um projeto que você não é o criador, precisa de uma permissão prévia no repositório do GitHub
 
 ![alt text](image-7.png)
@@ -62,6 +66,8 @@ git push origin main: Após salvar localmente, você compartilha com o repositó
 git pull origin main: Oposto do git push, ele verifica e extrai o repositório online, normalmente útil para puxar o novo repositório atuaizado por outros colaboradores.
 
 ![alt text](image-8.png)
+
+git reset: Funciona para desfazer alterações do repositório, normalmente ideal somente alterar o repositório local
 
 #### O Fluxo Comum no Dia a Dia:
 Modifique arquivos no seu projeto. ✍️
