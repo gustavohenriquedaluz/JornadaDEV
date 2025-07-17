@@ -137,3 +137,37 @@ Central (Result): Onde você constrói a versão final, combinando ou escolhendo
 **Finalização**: Após resolver todos os conflitos visuais no painel "Result" e salvar o arquivo, adicione-o ao stage (git add <nome_do_arquivo>) e, em seguida, faça o commit (git commit) para completar a resolução do merge.
 
 ![alt text](image-9.png)
+
+
+Arquivo .gitignore - É um arquivo criado com este nome e tudo que estiver confugurado nele não será incluido nos commits, mesmo se você der o git add .
+
+~~~
+Padrões Comuns do .gitignore
+nome_arquivo.txt: Ignora um arquivo específico com esse nome exato.
+
+pasta_exemplo/: Ignora um diretório (pasta) completo com esse nome e todo o seu conteúdo. A barra final / é opcional, mas recomendada para clareza em diretórios.
+
+*.log: Ignora todos os arquivos com a extensão .log em qualquer lugar do repositório. O asterisco * é um curinga.
+
+**/cache/: Ignora qualquer diretório chamado cache em qualquer subdiretório do projeto. ** representa zero ou mais diretórios.
+
+!nao_ignorar_este.txt: Impede que um arquivo específico seja ignorado, mesmo que corresponda a um padrão anterior.
+
+node_modules/: Ignora a pasta node_modules, que contém as dependências de projetos JavaScript/Node.js.
+
+venv/: Ignora a pasta venv, usada para ambientes virtuais Python.
+
+.env: Ignora o arquivo .env, que geralmente guarda variáveis de ambiente e informações sensíveis.
+
+*.tmp: Ignora arquivos com a extensão .tmp, frequentemente usados como arquivos temporários por programas.
+
+.DS_Store: Ignora arquivos ocultos criados pelo macOS.
+
+Thumbs.db: Ignora arquivos ocultos de miniaturas criados pelo Windows.
+
+target/: Ignora a pasta target, onde ficam os arquivos de build de projetos Java (Maven/Gradle).
+
+.vscode/: Ignora a pasta .vscode, que contém configurações específicas do VS Code para o projeto.
+~~~~
+
+gist - é um serviço do GitHub para compartilhar pequenos trechos de código, notas ou arquivos de texto de forma simples, tpo um mini repositório que você pode compartilhar o link
