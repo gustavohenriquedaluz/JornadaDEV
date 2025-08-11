@@ -17,9 +17,6 @@ function fatorial(numeroBase) {
 
 
 
-
-
-
 let cotacaoDolar = 4.8
 
 console.log(`R$ ${converter(4)}`)

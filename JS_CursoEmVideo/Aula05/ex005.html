@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+        body {
+            background: rgb(217, 245, 245);
+            color: black;
+            font: normal 18pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM!</h1> 
+    <p>Aqui vai o resultado!</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div class='msg'>Clique em mim!</div>
+</body>
+
+<script>
+    let paragrafo1 = document.getElementsByTagName('p')[1];
+    paragrafo1.style.color = 'blue' // Define a cor da fonte de paragrafo1 como 'blue'
+
+    document.write(paragrafo1.innerText); // Retorno: Apenas texto visível (ignora tags e estilos)
+    document.write(paragrafo1.innerHTML); // Retorno: HTML completo (incluindo tags, estilos,comentários, etc)
+
+    //let divMsg = document.getElementById('msg');
+    //divMsg.innerText = 'Nova mensagem'
+
+    let divMsgId = document.querySelector('div#msg')
+    divMsg.innerHTML = 'Teste query.Selector'
+
+    let divMsgClass = document.querySelector('div.msg')
+    divMsgClass.innerHTML = 'Teste query.Selector'
+
+
+    
+</script>
+</html>

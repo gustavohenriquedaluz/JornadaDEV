@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de cidadania</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: rgb(212, 221, 221);
+            font: normal 20pt arial;
+        }
+
+        input {
+            width: 100px;
+        }
+
+        div#res {
+            margin-top: 20px;
+            font: normal 30pt arial;
+        }
+
+    </style>
+
+    <h1>Teste de cidadania</h1>
+    Digite o país de nascimento <input name="testeCidadania" id="testeCidadania">
+    <input type="button" value="Checar" onclick="checarCidadania()">
+    <div id="res">
+     
+<script>
+    function checarCidadania() {
+        let cidadaniaInput = document.getElementById('testeCidadania').value;
+        let res = document.querySelector('div#res');
+        if (cidadaniaInput == 'Brasil' || cidadaniaInput == 'BR') {
+            res.innerHTML = `<p> Você nasceu no país ${cidadaniaInput}, portanto você é <strong>BRASILEIRO</strong>!</p>`;
+        } else {
+            res.innerHTML = `<p> Você nasceu no país ${cidadaniaInput}, portanto você é <strong>ESTRANGEIRO!</p>`
+        }
+        res.innerHTML += `<p>Obrigado por testar sua cidadania, ${cidadaniaInput} é um país maravilhoso!</p>`
+    }
+</script>
+</body>
+</html>

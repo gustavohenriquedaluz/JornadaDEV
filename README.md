@@ -15,6 +15,60 @@
 #### ⭐ [   Native Icons](https://gist.github.com/rxaviers/7360908#file-gistfile1-md)
 
 
+JS
+
+let = declarar variável (Só funciona dentro do bloco)
+
+const = declarar algo imutável (Só funciona dentro do bloco)
+
+var = forma  antiga de declarar variável, usar let
+
+for = loop \ laço  que repete para uma condição
+
+while = Loop enquanto tal condição
+
+Dentro do Bloco = Código que está dentro de { }
+
+
+DOM (Document Object Model) - é uma interface para documentos HTML, que permite interagir com a página WEB, pois representa os elementos como documentos
+
+
+~~~
+// 1. Declaração da função:
+function saudarUsuario() {
+console.log("Olá, bem-vindo(a)!");
+}
+
+// 2. Chamada da função:
+saudarUsuario(); // Saída: Olá, bem-vindo(a)!
+saudarUsuario(); // Você pode chamar quantas vezes quiser
+
+~~~
+
+
+Document (Objeto) = Como se fosse a raiz para acessar as partes específicas do HTML, 
+
+innerHTML = propriedade do JS que permite acessar ou modificar o conteúdo de um elemento no documento.
+
+
+~~~
+<div id="minhaCaixa">
+<p>Um <strong>parágrafo</strong> aqui.</p>
+</div>
+
+<script>
+const caixa = document.getElementById('minhaCaixa');
+console.log(caixa.innerHTML);
+// Saída: <p>Um <strong>parágrafo</strong> aqui.</p>
+</script>
+
+~~~
+
+Function = É um bloco de código que eu associo a uma palavra, não precisando repetir várias vezes a mesma coisa
+
+![alt text](image.png)
+
+
 ### Git e GitHub
 
 GitHub - Plataforma de hospedagem de códigos e afins, constrúido em base no GIT. Basicamente é como uma rede social dos desenvolvedores, mas mostrando e organizando todos os seus materiais e criações
