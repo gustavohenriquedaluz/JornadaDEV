@@ -40,6 +40,9 @@ if (produto.value == 'Fone de ouvido - R$100'){
     totalCarrinhoElemento.innerText = `R$${totalCarrinho}`
 }
 
+    document.getElementById('quantidade').value = 0;
+    console.log(`Produto ${produto.value}, QTD ${qtdProduto}`)
+    alert(`Produto ${produto.value}, QTD ${qtdProduto}`)
 
 
 }
@@ -52,3 +55,23 @@ let qtdProdutoBruto = document.getElementById('quantidade')
     carrinho.innerHTML = ''
     totalCarrinho = 0
 }
+
+
+    let desafioHTML = document.querySelector('p#desafio')
+    desafioHTML.textContent = `TESTE MALUCO`
+
+/* 
+    let n1 = 4
+    let n2 = 6
+    alert(`A soma entre ${n1} e ${n2} é ${n1 + n2}`) */
+
+
+
+    let frase = 'Para;quedas'
+    let palavraFinal = frase.split(';')[1]
+    console.log(palavraFinal)
+
+    let numerosString = '1,2,3'
+    let numerosTratados = numerosString.split(',')
+    console.log(numerosTratados)
+    console.log(Number(numerosTratados[0]) + Number(numerosTratados[1]))     
