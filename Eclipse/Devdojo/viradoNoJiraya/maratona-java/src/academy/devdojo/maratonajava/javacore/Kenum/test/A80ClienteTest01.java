@@ -11,6 +11,7 @@ public class A80ClienteTest01 {
 		System.out.println(cliente1);
 		System.out.println(cliente2);
 		System.out.println(A82TipoPagamento.DEBITO.calcularDesconto(100));
+		System.out.println("valueof abaixo");
 		A80TipoCliente tipoCliente = A80TipoCliente.valueOf("PESSOA_FISICA");
 		System.out.println(tipoCliente.getNomeRelatorio());
 		A80TipoCliente tipoCliente2 = A80TipoCliente.tipoClientePorNomeRelatorio("Pessoa Física");
