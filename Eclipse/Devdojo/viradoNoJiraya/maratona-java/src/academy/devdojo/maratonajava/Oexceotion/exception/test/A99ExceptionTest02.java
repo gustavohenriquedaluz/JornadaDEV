@@ -1,0 +1,24 @@
+package academy.devdojo.maratonajava.Oexceotion.exception.test;
+
+import java.io.File;
+import java.io.IOException;
+
+public class A99ExceptionTest02 {
+
+	public static void main(String[] args) throws IOException {
+		criarNovoArquivo();
+	}
+
+	private static void criarNovoArquivo() throws IOException {
+		File file = new File("arquivo\\teste.txt");
+		try {
+			boolean isCriado = file.createNewFile();
+			System.out.println("Arquivo criado " + isCriado);
+		} catch (IOException e) {
+			e.printStackTrace();
+			throw e;
+			// throw new RuntimeException("Problema na hora de criar arquivo");
+		}
+
+	}
+}

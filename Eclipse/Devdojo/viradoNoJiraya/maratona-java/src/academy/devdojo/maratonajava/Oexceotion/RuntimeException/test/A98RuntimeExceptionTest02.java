@@ -1,0 +1,30 @@
+package academy.devdojo.maratonajava.Oexceotion.RuntimeException.test;
+
+public class A98RuntimeExceptionTest02 {
+
+	public static void main(String[] args) {
+		divisao(1, 0);
+
+//		try {
+//			divisao(1, 0);
+//		} catch (RuntimeException e) {
+//			e.printStackTrace();
+//		}
+//		System.out.println("Código finalizado");
+	}
+
+	/**
+	 * 
+	 * @param a
+	 * @param b não pode ser 0
+	 * @return
+	 * @throws IllegalArgumentException
+	 */
+
+	private static int divisao(int a, int b) {
+		if (b == 0) {
+			throw new IllegalArgumentException("Argumento ilegal, não pode ser 0");
+		}
+		return a / b;
+	}
+}
