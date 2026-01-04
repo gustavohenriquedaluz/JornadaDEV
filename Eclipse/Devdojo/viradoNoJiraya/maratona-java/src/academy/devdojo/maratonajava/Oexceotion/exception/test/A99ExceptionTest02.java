@@ -11,14 +11,14 @@ public class A99ExceptionTest02 {
 
 	private static void criarNovoArquivo() throws IOException {
 		File file = new File("arquivo\\teste.txt");
-		try {
+		
+		try { // Tenta executar o bloco
 			boolean isCriado = file.createNewFile();
 			System.out.println("Arquivo criado " + isCriado);
-		} catch (IOException e) {
-			e.printStackTrace();
-			throw e;
-			// throw new RuntimeException("Problema na hora de criar arquivo");
+		} catch (IOException e) { // Se a exceção definida foi capturada, executa o bloco abaixo
+			e.printStackTrace(); // Imprime no console
+			throw e; // Relançando a exception
+			// throw new RuntimeException("Problema na hora de criar arquivo"); // Variação, se quisesse retornar outra excepção e não precisa usar o throw
 		}
-
 	}
 }
