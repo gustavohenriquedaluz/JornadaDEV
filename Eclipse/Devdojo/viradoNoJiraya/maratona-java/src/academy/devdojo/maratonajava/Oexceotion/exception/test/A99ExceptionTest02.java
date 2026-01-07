@@ -9,7 +9,7 @@ public class A99ExceptionTest02 {
 		criarNovoArquivo();
 	}
 
-	private static void criarNovoArquivo() throws IOException {
+	private static void criarNovoArquivo() throws IOException { //Criação de método fora da main, do tipo checked (Não runtime)
 		File file = new File("arquivo\\teste.txt");
 		
 		try { // Tenta executar o bloco
