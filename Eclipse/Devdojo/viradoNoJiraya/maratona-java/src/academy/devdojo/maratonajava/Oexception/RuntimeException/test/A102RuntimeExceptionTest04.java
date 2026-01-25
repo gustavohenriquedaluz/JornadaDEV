@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.Oexception.RuntimeException.test;
 import java.io.FileNotFoundException;
 import java.sql.SQLException;
 
-public class A101RuntimeExceptionTest04 {
+public class A102RuntimeExceptionTest04 {
 
 	public static void main(String[] args) {
 		try {
