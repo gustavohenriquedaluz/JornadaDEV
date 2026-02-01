@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.Oexception.exception.domain;
+package academy.devdojo.maratonajava.javacore.Oexception.exception.domain;
 
 public class A104LoginInvalidoException extends Exception {
 

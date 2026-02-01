@@ -1,10 +1,10 @@
-package academy.devdojo.maratonajava.Oexception.exception.test;
+package academy.devdojo.maratonajava.javacore.Oexception.exception.test;
 
 import java.io.FileNotFoundException;
 
-import academy.devdojo.maratonajava.Oexception.exception.domain.A104LoginInvalidoException;
-import academy.devdojo.maratonajava.Oexception.exception.domain.A105Funcionario;
-import academy.devdojo.maratonajava.Oexception.exception.domain.A105Pessoa;
+import academy.devdojo.maratonajava.javacore.Oexception.exception.domain.A104LoginInvalidoException;
+import academy.devdojo.maratonajava.javacore.Oexception.exception.domain.A105Funcionario;
+import academy.devdojo.maratonajava.javacore.Oexception.exception.domain.A105Pessoa;
 
 public class A105SobrescritaComExceptionTest01 {
 

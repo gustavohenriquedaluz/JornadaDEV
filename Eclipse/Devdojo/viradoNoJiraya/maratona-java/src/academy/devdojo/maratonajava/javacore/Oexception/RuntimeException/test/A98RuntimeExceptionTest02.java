@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.Oexception.RuntimeException.test;
+package academy.devdojo.maratonajava.javacore.Oexception.RuntimeException.test;
 
 public class A98RuntimeExceptionTest02 {
 

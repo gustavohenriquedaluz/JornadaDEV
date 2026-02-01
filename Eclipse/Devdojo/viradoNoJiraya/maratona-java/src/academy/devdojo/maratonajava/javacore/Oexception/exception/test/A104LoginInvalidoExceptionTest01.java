@@ -1,8 +1,8 @@
-package academy.devdojo.maratonajava.Oexception.exception.test;
+package academy.devdojo.maratonajava.javacore.Oexception.exception.test;
 
 import java.util.Scanner;
 
-import academy.devdojo.maratonajava.Oexception.exception.domain.A104LoginInvalidoException;
+import academy.devdojo.maratonajava.javacore.Oexception.exception.domain.A104LoginInvalidoException;
 
 public class A104LoginInvalidoExceptionTest01 {
 

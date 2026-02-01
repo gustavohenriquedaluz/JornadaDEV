@@ -1,4 +1,6 @@
-package academy.devdojo.maratonajava.Oexception.exception.test;
+package academy.devdojo.maratonajava.javacore.Oexception.exception.test;
+
+
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -6,8 +8,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 
-import academy.devdojo.maratonajava.Oexception.exception.domain.A103Leitor1;
-import academy.devdojo.maratonajava.Oexception.exception.domain.A103Leitor2;
+import academy.devdojo.maratonajava.javacore.Oexception.exception.domain.A103Leitor1;
+import academy.devdojo.maratonajava.javacore.Oexception.exception.domain.A103Leitor2;
 
 public class A103TryWithResourcesTest01 {
 	public static void main(String[] args) {
