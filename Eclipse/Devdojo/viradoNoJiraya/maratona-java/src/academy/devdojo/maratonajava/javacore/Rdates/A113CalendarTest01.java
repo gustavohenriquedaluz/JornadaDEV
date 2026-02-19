@@ -8,7 +8,8 @@ public class A113CalendarTest01 {
 	public static void main(String[] args) {
 		// Calendar calendar = new Calendar(); Classe abstrata, não se pode instanciar
 		Calendar c = Calendar.getInstance();
-		if (c.getFirstDayOfWeek() == Calendar.SUNDAY) { //Teste se o primeiro dia do mês é domingo, baseado no calendário criado
+		if (c.getFirstDayOfWeek() == Calendar.SUNDAY) { // Teste se o primeiro dia do mês é domingo, baseado no
+														// calendário criado
 			System.out.println("Domingão é o primeiro dia da semana");
 		} else if (c.getFirstDayOfWeek() == Calendar.MONDAY) {
 			System.out.println("Segundona é o primeiro dia da semana");
