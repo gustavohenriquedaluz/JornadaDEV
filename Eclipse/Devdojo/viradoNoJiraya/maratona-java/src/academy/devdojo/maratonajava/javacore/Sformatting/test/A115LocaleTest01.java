@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Rdates;
+package academy.devdojo.maratonajava.javacore.Sformatting.test;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -7,6 +7,10 @@ import java.util.Locale;
 public class A115LocaleTest01 {
 	public static void main(String[] args) {
 		//pt-BR , letras minúsculas definem o idioma e maiúscula define o PAÍS
+		
+		//ISO 639, ISO 3166
+		// pt-BR, pt-PT
+		
 		Locale localeItaly = new Locale("it", "IT");
 		Locale localeCH = new Locale("it", "CH");
 		Locale localeIndia = new Locale("hi", "IN");
@@ -27,6 +31,6 @@ public class A115LocaleTest01 {
 		System.out.println(localeItaly.getDisplayCountry(localeJapao)); // イタリア (Italia em Japonês)
 		System.out.println(localeCH.getDisplayCountry(localeHolanda)); // Zwitserland (Suiça em Holandês)
 		System.out.println(localeItaly.getDisplayLanguage(localeJapao)); // イタリア語 (Italiano em Japonês)
-		System.out.println(localeCH.getDisplayLanguage(localeHolanda)); // イタリア語 (Italiano em Holandês)
+		System.out.println(localeCH.getDisplayLanguage(localeHolanda)); // イタリア語 (Suiça em Holandês)
 	}
 }

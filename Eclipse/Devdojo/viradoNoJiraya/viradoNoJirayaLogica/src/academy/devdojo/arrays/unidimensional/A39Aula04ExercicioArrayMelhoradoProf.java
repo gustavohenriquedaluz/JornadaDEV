@@ -10,17 +10,14 @@ public class A39Aula04ExercicioArrayMelhoradoProf {
 		Scanner scanner = new Scanner(System.in);
 		String resutadoMultiplicacaoArrays = "";
 		for (int i = 0; i < array1.length; i++) {
-			System.out.println("Vetor 1, posição " + i + ": ");
+			System.out.println("Array 1, posição " + i + ": ");
 			array1[i] = scanner.nextInt();
-			System.out.println("Vetor 2, posição " + i + ": ");
+			System.out.println("Array 2, posição " + i + ": ");
 			array2[i] = scanner.nextInt();
 			array3[i] = array1[i] * array2[i];
 			resutadoMultiplicacaoArrays = resutadoMultiplicacaoArrays + array3[i] + " ";
 		}
-		
 		System.out.println(resutadoMultiplicacaoArrays);
-		
-		
 		scanner.close();
 	}
 }
